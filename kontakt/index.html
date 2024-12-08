@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Britisch Kurzhaar Kontakt, Britisch Kurzhaar Fragen, Britisch Kurzhaar Website Kontakt"
+    />
+    <meta
+      name="description"
+      content="Nimm Kontakt mit uns auf, wenn du Fragen zur Britisch Kurzhaar Katze hast oder weitere Informationen benötigst."
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js" async></script>
+    <script src="/js/script.js" async></script>
+    <script src="/js/themeToggle.js"></script>
+    <script src="/components/Header.js"></script>
+    <script src="/components/Footer.js"></script>
+    <title>Kontakt – Schreibe uns!</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main id="main-kontakt">
+      <section>
+        <h1>Wir freuen uns auf deine Nachricht!</h1>
+        <p>
+          Du hast Fragen zur Britisch Kurzhaar Katze, hast Bilder für unsere
+          Galerie oder möchtest mehr Informationen zu bestimmten Themen? Wir
+          sind gerne für dich da! Nutze das Kontaktformular, um uns zu
+          schreiben, oder erreiche uns über unsere Social Media Kanäle. Wir
+          freuen uns auf deine Nachricht und helfen dir gerne weiter!
+        </p>
+      </section>
+      <section>
+        <form action="/submit-form" method="post" enctype="multipart/form-data">
+          <div class="flex-col">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="flex-col">
+            <label for="email">E-Mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="text@example.com"
+              required
+            />
+          </div>
+
+          <div class="flex-row">
+            <label for="hasBKH">Haben Sie eine Britisch Kurzhaar?</label>
+            <input type="checkbox" id="hasBKH" name="hasBKH" />
+          </div>
+
+          <div class="flex-col">
+            <label for="imageUpload">Bild hochladen:</label>
+            <input
+              type="file"
+              id="imageUpload"
+              name="imageUpload"
+              accept="image/*"
+            />
+          </div>
+
+          <div class="flex-col">
+            <label for="message">Nachricht:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            >
+          </div>
+
+          <input type="submit" value="Absenden" />
+        </form>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
